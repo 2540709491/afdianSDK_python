@@ -675,11 +675,11 @@ def send_message(user_id="",type="1",content=""):
     return SendMsgInfo.from_json(response.json())
 # 配置信息
 #user_id:从爱发电开发者后台获取::https://afdian.com/dashboard/dev
-user_id = "a10805bcdc7611ef8b685254001e7c00"
+user_id = ""
 #token:从爱发电开发者后台获取
-token = "USxC89HdYwWVrTugv6RcG4pmJAshXaey"
+token = ""
 #auth_token:从cookie里获取
-auth_token="e25ea21e7f0be47ea2da2072fe3c9e73_20250721135540"
+auth_token=""
 
 order_api = "https://afdian.com/api/open/query-order"
 check_api="https://afdian.com/api/my/check"
@@ -687,7 +687,7 @@ messages_api="https://afdian.com/api/message/messages"
 send_message_api="https://afdian.com/api/message/send"
 #获取订单信息()
 #获取check信息
-aaa=check("35e97c240c2b11eeaff55254001e7c00")
-bbb=messages("35e97c240c2b11eeaff55254001e7c00","old")
-ccc=send_message("35e97c240c2b11eeaff55254001e7c00","1","自动回复测试1")
+aaa=check("")
+bbb=messages("","old")
+ccc=send_message("","1","自动回复测试1")
 print("111")
